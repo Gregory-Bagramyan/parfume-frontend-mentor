@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1{
+    font-family: Monteserrat;
+    font-weight: normal;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%)
+}
+
+.image-and-description{
+    height:20rem;
+    width:30rem;
+    display:flex;
+}
+
+.image{
+    display: block; 
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img{
+    height:100%;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container{
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-family: Fraunces;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    /*font-size: clamp(0.7rem, 2.5vw, 1.5rem);  responsive font */
+    /* line-height: 1.4; */
+    /* word-break: break-word; */
+    /* overflow: hidden; */
+
+}
+#description{
+    font-size: 0.9rem;
+    font-family: Monteserrat;
+    color: hsl(228, 12%, 48%)
+}
+
+#prices{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#price{
+    font-size: 1.5rem;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+
+#old-price{
+    font-size: 0.7rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+svg{
+    margin-right:10px;
+}
+
+button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Monteserrat;
+    height:2.3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color:white;
+    margin-top: 10px;
+}
+
+button:hover{ 
+     background-color: hsl(158, 42%, 18%);
+     cursor:pointer
+}
+
+@media (max-width: 768px) {
+    .image-and-description {
+        flex-direction: column;
+        height:37rem;
+        width:20rem;
+    }
+
+    .image{
+        height:50%;
+        width:100%;
+    }
+
+    img{
+        height:100%;
+        width:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .container{
+        height:50%;
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
